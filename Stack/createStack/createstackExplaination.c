@@ -8,6 +8,8 @@ typedef struct stack
     int arr[MAX];
 } st;
 
+
+// Function to create stack
 void stackCreation(st *s)
 {
     s->top = -1;
@@ -21,9 +23,10 @@ void stackCreation(st *s)
     printf("Intialized Stack with -1 as top value\n");
 }
 
+// Function display stack with either empty or value with index
 void displayStack(st *s)
 {
-    for (int i = 9; i >= 0; i--)
+    for (int i = MAX - 1; i >= 0; i--)
     {
         if (s->arr[i] == 0)
         {
