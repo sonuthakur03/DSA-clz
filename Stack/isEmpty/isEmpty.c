@@ -24,7 +24,7 @@ int main() {
 
     if (isEmpty(&s))
     {
-        printf("Stack is empty\n");
+        printf("Come on!! Stack underflow, Stack is empty\n");
     }else{
         printf("Stack is not-empty\n");
     }
