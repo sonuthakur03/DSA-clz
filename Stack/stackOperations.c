@@ -32,7 +32,7 @@ void push(struct stack *s, int value){
         printf("Stack Overflow! Cannot push %d\n");
         return;
     }
-    s->arr[++s->top] == value;
+    s->arr[++s->top] = value;
     printf("Pushed %d onto the stack\n",value);
 }
 
@@ -70,7 +70,7 @@ void display(struct stack *s){
 
 // Menu code
 int main(){
-    struct stack *s;
+    struct stack s;
     createStack(&s);
 
     push(&s, 10);
